@@ -1,0 +1,397 @@
+@charset "UTF-8";
+/* Responsive CSS Document */
+
+/* ====================================================================================
+Responsive Layout Media Queries CSS
+(can also be min-device-width or max-device-width for devices changes only)
+======================================================================================= */
+
+
+/* Working out percentages
+(Item width x 100) / Container width (e.g. 940) = %
+*/
+
+
+/* Large Desktop - Design Width = 1300px
+======================================================== */
+
+@media only screen and (min-width: 1300px) and (max-width: 1487px)  {
+
+	/* Styles */
+
+	
+}
+
+
+
+/* MacBook Screen - Design Width = 1280px
+======================================================== */
+
+@media only screen and (min-width: 1025px) and (max-width: 1299px) {
+
+
+	/* Styles */
+
+	.two_col_two p{
+		margin: 40px 50px 0 50px;
+		font-size: 1.4em;
+		line-height: 2.6em;
+		padding: 0;
+	}
+
+	.touch_btn {
+		padding: 20px 10px;
+		font-size: 1.4em;
+		letter-spacing: 0px;
+	}
+	
+	
+
+
+	/* For break tags only */
+
+	/* Visible */
+	.visible_desktop_tablet { display: block !important; }
+	.visible_desktop { display: none !important; }
+	.visible_tablet { display: block !important; }
+	.visible_phone { display: none !important; }
+	.visible_tablet_phone { display: block !important; }
+	/* Hidden */
+	.hidden_desktop_tablet { display: none !important; }
+	.hidden_desktop { display: block !important; }
+	.hidden_tablet { display: none !important; }
+	.hidden_phone { display: block !important; }
+	.hidden_tablet_phone { display: block !important; }
+
+}
+
+
+
+/* iPad/Tablet (both) - Design Width = 768px
+======================================================== */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+	/* Styles */
+
+	.two_col_two p{
+		margin: 10px 50px 0 50px;
+		font-size: 1.4em;
+		line-height: 2.6em;
+		padding: 0;
+	}
+
+	.touch_btn {
+		padding: 20px 5px;
+		font-size: 1.2em;
+		letter-spacing: 0px;
+	}
+
+
+	
+	/* For break tags only */
+
+	/* Visible */
+	.visible_desktop_tablet { display: block !important; }
+	.visible_desktop { display: none !important; }
+	.visible_tablet { display: block !important; }
+	.visible_phone { display: none !important; }
+	.visible_tablet_phone { display: block !important; }
+	/* Hidden */
+	.hidden_desktop_tablet { display: none !important; }
+	.hidden_desktop { display: block !important; }
+	.hidden_tablet { display: none !important; }
+	.hidden_phone { display: block !important; }
+	.hidden_tablet_phone { display: block !important; }
+
+}
+
+
+/* iPad/Tablet (Landscape) - Design Width = 1024px
+======================================================== */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) { 
+
+	/* Styles */
+
+
+
+	
+	/* For break tags only */
+
+	/* Visible */
+	.visible_desktop_tablet { display: block !important; }
+	.visible_desktop_tablet_land { display: block !important; }
+	.visible_desktop { display: none !important; }
+	.visible_tablet { display: block !important; }
+	.visible_tablet_land { display: block !important; }
+	.visible_phone { display: none !important; }
+	.visible_tablet_phone { display: block !important; }
+	/* Hidden */
+	.hidden_desktop_tablet { display: none !important; }
+	.hidden_desktop { display: block !important; }
+	.hidden_tablet { display: none !important; }
+	.hidden_phone { display: block !important; }
+	.hidden_tablet_phone { display: none !important; }
+
+}
+
+
+
+/* iPad/Tablet (Portrait) - Design Width = 768px
+======================================================== */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+	/* Styles */
+
+	.two_col_one img{
+		margin: 20px 0 0 0;
+	}
+
+	.two_col_two p{
+		margin: 10px 50px 0 50px;
+		font-size: 1.4em;
+		line-height: 2.1em;
+		padding: 0;
+	}
+
+	.team p {
+		text-align: center;
+		font-size: 1.6em;
+		letter-spacing: 0;
+		line-height: 1.4em;
+		padding: 40px;
+	}
+
+	.touch_btn a{
+		padding: 10px 5px;
+		font-size: 1.2em;
+		letter-spacing: 0px;
+	}
+
+	/* For break tags only */
+	
+	/* Visible */
+	.visible_desktop_tablet { display: block !important; }
+	.visible_desktop_tablet_land { display: none !important; }
+	.visible_desktop { display: none !important; }
+	.visible_tablet { display: block !important; }
+	.visible_tablet_port { display: block !important; }
+	.visible_phone { display: none !important; }
+	.visible_tablet_phone { display: block !important; }
+	/* Hidden */
+	.hidden_desktop_tablet { display: none !important; }
+	.hidden_desktop { display: block !important; }
+	.hidden_tablet { display: none !important; }
+	.hidden_phone { display: block !important; }
+	.hidden_tablet_phone { display: none !important; }
+	
+}
+
+
+/* iPhone/Mobile (Landscape) - Design Width = 480px
+======================================================== */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	/* Styles */
+
+
+	#logo{
+		display: none;
+	}
+
+	.header{
+		border: none;
+		margin: 0;
+		height: 70px;
+	}
+
+	#responsive_logo {
+		display: inline-block;
+		width: 70px;
+		height: 70px;
+		float: left;
+		position: absolute;
+		top: 19px;
+		left: 25px;
+	}
+
+	#dropdown-content{
+		top: 109px;
+	}
+
+	.dropdown button {
+		margin: 5px 30px 0 70px;
+	}
+
+	.two_col_one,
+	.two_col_two{
+		width: 100%;
+	}
+
+	.two_col_two p {
+		text-align: center;
+		padding: 0;
+		font-size: 1.6em;
+		font-weight: 300;
+		line-height: 2.3em;
+		margin: 50px 40px 0 40px;
+	}
+
+	.modal-content{
+		width: 80%;
+		margin: 30px auto;
+	}
+
+	.three_col_one,
+	.three_col_two,
+	.three_col_three{
+		width: 100%;
+	}
+
+	.touch_btn {
+		padding: 15px 5px;
+		letter-spacing: 0px;
+		font-size: 1.2em;
+	}
+
+	.flex{
+		flex: 50%;
+		max-width: 50%;
+	}
+
+	#contact{
+		margin: 0;
+	}
+
+	.form{
+		width: 80%;
+	}
+
+	
+
+	/* Visible */
+	.visible_desktop_tablet { display: none !important; }
+	.visible_desktop_tablet_land { display: none !important; }
+	.visible_desktop { display: none !important; }
+	.visible_tablet { display: none !important; }
+	.visible_phone { display: block !important; }
+	.visible_phone_land { display: block !important; }
+	.visible_tablet_phone { display: block !important; }
+	/* Hidden */
+	.hidden_desktop_tablet { display: block !important; }
+	.hidden_desktop { display: block !important; }
+	.hidden_tablet { display: block !important; }
+	.hidden_phone { display: none !important; }
+	.hidden_tablet_phone { display: none !important; }
+
+}
+
+
+
+/* iPhone/Mobile (Portrait) - Design Width = 320px
+======================================================== */
+
+@media only screen and (min-width: 300px) and (max-width: 479px) {
+
+
+	/* Styles */
+
+	#logo{
+		display: none;
+	}
+
+	.header{
+		border: none;
+		margin: 0;
+		height: 70px;
+	}
+
+	#responsive_logo {
+		display: inline-block;
+		width: 70px;
+		height: 70px;
+		float: left;
+		position: absolute;
+		top: 19px;
+		left: 25px;
+	}
+
+	#dropdown-content{
+		top: 109px;
+	}
+
+	.dropdown button {
+		margin: 5px 30px 0 70px;
+	}
+
+	.two_col_one,
+	.two_col_two{
+		width: 100%;
+	}
+
+	.two_col_two p {
+		text-align: center;
+		padding: 0;
+		font-size: 1.6em;
+		font-weight: 300;
+		line-height: 1.4em;
+		margin: 50px 40px 0 40px;
+	}
+
+	.team h2{
+		line-height: 1.3em;
+	}
+
+	.modal-content{
+		width: 80%;
+		margin: 30px auto;
+	}
+
+	.three_col_one,
+	.three_col_two,
+	.three_col_three{
+		width: 100%;
+	}
+
+	.touch_btn {
+		padding: 15px 5px;
+		letter-spacing: 0px;
+		font-size: 1.2em;
+	}
+
+	.flex{
+		flex: 50%;
+		max-width: 50%;
+	}
+
+	#contact{
+		margin: 0;
+	}
+
+	.form{
+		width: 80%;
+	}
+
+	
+
+
+	/* Visible */
+	.visible_desktop_tablet { display: none !important; }
+	.visible_desktop_tablet_land { display: none !important; }
+	.visible_desktop { display: none !important; }
+	.visible_tablet { display: none !important; }
+	.visible_phone { display: block !important; }
+	.visible_phone_port { display: block !important; }
+	.visible_tablet_phone { display: block !important; }
+	/* Hidden */
+	.hidden_desktop_tablet { display: block !important; }
+	.hidden_desktop { display: block !important; }
+	.hidden_tablet { display: block !important; }
+	.hidden_phone { display: none !important; }
+	.hidden_tablet_phone { display: none !important; }
+
+}
+
