@@ -185,7 +185,7 @@
       <h2>Get in Touch</h2>
     <hr/>
     <div class="form">
-        <form action="action_page.php" method="POST" name="myForm" onsubmit="return(validate());">
+        <form method="POST" name="myForm" onsubmit="validate()">
 
           <input type="text" id="fname" name="firstname" placeholder="First name">
          
@@ -197,9 +197,6 @@
 
           <button class="submit_btn" type="submit" value="Send">Submit</button>
       </form>
-      <?php if (isset($_GET['sent'])) {  ?>
-          <h2 style="color:#C0323B; line-height:1.3em">Thanks - your message was sent!</h2>
-        <?php  } ?>
     </div>
   </div>
 </div>

@@ -109,29 +109,8 @@ document.getElementById("close").onclick = function() {
 // ==================================================================================
 
 function validate(){
-        
-         if( document.myForm.firstname.value == "" ) {
-            alert( "Please provide your first name!" );
-            document.myForm.firstname.focus() ;
+            alert( "Please contact me through the main contact form" );
             return false;
-         }
-         if( document.myForm.lastname.value == "" ) {
-            alert( "Please provide your last name!" );
-            document.myForm.lastname.focus() ;
-            return false;
-         }
-         if( document.myForm.email.value == "" ) {
-            alert( "Please provide your e-mail address!" );
-            document.myForm.email.focus() ;
-            return false;
-         }
-         if( document.myForm.subject.value == "" ) {
-            alert( "Please fill in a message!" );
-            document.myForm.subject.focus() ;
-            return false;
-         }
-
-         return( true );
       }
 
 // RESPONSIVE MENU DROPDOWN
